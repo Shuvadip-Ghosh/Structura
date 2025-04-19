@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+	--primary-color:#525757;
+}
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Lora", serif;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	background-color: black;
+}
+
+#root {
+	border-radius: 5.8rem;
+	border: 1rem solid black;
+	height: 100vh;
+	background-color: white;
+	overflow: scroll;
+}
+
+
+/* navbar */
+nav {
+	height: 4rem;
+	width: 90%;
+	margin: auto;
+	margin-top: 3rem;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nl{
+	display: flex;
+	align-items: center;
+}
+.nl>img{
+	height: 4rem;
+}
+.nl>h3{
+	color: var(--primary-color);
+	font-weight: 550;
+	letter-spacing: 0.02rem;
+}
+.nm{
+	height: 4rem;
+	border-radius: 5.8rem;
+	width: 30%;
+	background-color: black;
+}
+.nm>ul{
+	border-radius: 5.8rem;
+	height: 4rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+.nm>ul>li{
+	color: white;
+	cursor: pointer;
+}
+.nr{
+	width: 8%;
+}
+/* navbar */
+
+/* home */
+.home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 96vh;
+	background-image: url("../images/home-bg.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home>h1 {
+	width: 50%;
+	text-align: center;
+	color: var(--primary-color);
+	font-size: 5rem;
+	font-weight: 600;
+}
+
+.home>h2 {
+	width: 40%;
+	color: var(--primary-color);
+	font-weight: 600;
+	text-align: center;
+}
+/* home */
